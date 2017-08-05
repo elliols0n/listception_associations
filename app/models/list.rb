@@ -15,5 +15,6 @@ class List < ApplicationRecord
 validates :title, :presence => true
 
 has_many( :cards, :class_name => "Card", :foreign_key => "list_id" )
+has_one( :boards, :class_name => "Board", :through => "board_id" )
     
 end
