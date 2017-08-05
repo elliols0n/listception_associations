@@ -11,4 +11,7 @@
 #
 
 class List < ApplicationRecord
+    
+has_many( :card )
+    
 end
